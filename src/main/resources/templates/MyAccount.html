@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- header section starts  -->
+
+  <header class="main-header">
+
+    <a href="#" class="logo"> G.V.D.</a>
+
+    <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div> <!-- allows the user to select the page they want using the navigation bar at the top -->
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="basket.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        <a href="logout.html">Logout</a>
+    </nav>
+
+  </header>
+
+  <section class="products">
+    <div class="container">
+      <br>
+<div class="row"><h1>My Basket</h1></div>
+<table>
+  <br>
+  <tr>
+    <td style="font-size: 15px;" ><div class"col"><div class="product"><h2>&nbsp Product &nbsp</h2></div></div></td>
+    <td style="font-size: 15px;" ><div class"col"><div class="quantity"><h2>&nbsp Quantity &nbsp</h2></div></div></td>
+    <td style="font-size: 15px;" ><div class"col"><div class="price"><h2>&nbsp Price &nbsp</h2></div></div></td>
+  </tr>
+  <tr>
+    <td></td>
+
+
+    <!--basket view-->
+      <td><input type= "number" value= "{{$basket['quantity']}}" min="1" class="form" name="quantity"></td>
+      <td></td>
+
+      <!--update button-->
+      <td><button type="submit" onclick="alert('Quantity Updated Successfully')" class="btn">Update</button></td>
+    </form>
+
+    <!--Remove Button-->
+      <td><button type="submit" onclick="alert('Product Removed Successfully')" class="btn">remove</button></td>
+    </form>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><h3>Total = &nbsp</td><td></td>
+  </tr>
+</table>
+</div>
+<br>
+
+<!--Delivery Address take input-->
+<div class="container">
+  <br>
+  <div class="row"><h1> Checkout </h1></div>
+
+  <table>
+    <tr>
+      <td style="font-size: 15px;"><div class"col"><div class="checkoutSec"><h3>Name</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="checkoutSec"><h3>House Number</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="checkoutSec"><h3>Street Address</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="checkoutSec"><h3>Post Code</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="checkoutSec"><h3>City</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="checkoutSec"><h3>Card Number</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="checkoutSec"><h3>Expiry Date</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="checkoutSec"><h3>Cvv Number</h3></div></div></td>
+
+</tr>
+
+
+<form action="{{url('checkout')}}" method="POST">
+  <tr>
+    <td><input type= "text" value= "" class="form" name="name"></td>
+    <td><input type= "text" value= "" class="form" name="house_number"></td>
+    <td><input type= "text" value= "" class="form" name="street_address"></td>
+    <td><input type= "text" value= "" class="form" name="post_code"></td>
+    <td><input type= "text" value= "" class="form" name="city"></td>
+    <td><input type= "text" value= "" class="form" name="card_number"></td>
+    <td><input type= "date" value= "" class="form" name="expiry_date"></td>
+    <td><input type= "password" value= "" class="form" name="cvv"></td>
+    <br>
+
+    <!--Submit Order-->
+    <td><button type="submit" onclick="alert('We received your order! Thank You For Shopping with Us :) !!')" class="btn">Checkout</button></td>
+</form>
+
+</tr>
+
+</table>
+</div>
+<br>
+<!--Show user's orders-->
+
+<div class="container">
+  <br>
+  <div class="row"><h1>My Order History</h1></div>
+  <table>
+    <tr>
+      <td style="font-size: 15px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Product &nbsp</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Quantity &nbsp</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Price &nbsp</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Order Status &nbsp</h3></div></div></td>
+<td style="font-size: 15px;"><div class"col"><div class="Myorderhistory"><h3>&nbsp Ordered Places On Date: &nbsp</h3></div></div></td>
+</tr>
+
+</table>
+</div>
+
+</div>
+
+<!-- header section ends -->
+<!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+    <div class="box">
+      <h3>company name </h3>
+      <p>description of company</p>
+    </div>
+
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="index.html" class="link">Home</a> <!-- allows the user to navigate through the pages using the links in the footer -->
+      <a href="aboutus.html" class="link">About Us</a>
+      <a href="products.html" class="link">Products</a>
+      <a href="contact.html" class="link">Contact Us</a>
+      <a href="logout.html" class="link">Logout</a>
+      <a href="basket.html" class="link">Basket</a>
+    </div>
+
+  </div>
+
+  <div class="credit"> created by <span>Group 31</span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+<style type="text/css">
+
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+  * {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+
+  img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+
+  html::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: rgb(90,190,223);
+  }
+
+  section {
+    padding: 5rem 10%;
+  }
+
+  .heading-link h3 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #444;
+  }
+
+  .heading-link p {
+    font-size: 2rem;
+    line-height: 2;
+    color: #777;
+  }
+
+  .heading-link p a {
+    color: rgb(90,190,223);
+  }
+
+  .heading-link p a:hover {
+    text-decoration: underline;
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    color: #444;
+  }
+
+  .main-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(237,90,179);
+    -webkit-box-shadow: 0 0.5rem 1rem rgb(90,190,223);
+    box-shadow: 0 0.5rem 1rem rgb(90,190,223);
+    padding: 2rem 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .main-header .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: rgb(184,232,248);
+    font-weight: bolder;
+  }
+
+  .main-header .logo i {
+    color: rgb(184,232,248);
+  }
+
+  .main-header .navbar {
+    position: relative;
+  }
+
+  .main-header .navbar #close-navbar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #444;
+    display: none;
+  }
+
+  .main-header .navbar #close-navbar:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .main-header .navbar a {
+    margin-right: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgb(184,232,248);
+  }
+
+  .main-header .navbar a:hover {
+    color: white;
+  }
+
+  .main-header .icons div {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #444;
+    margin-left: 1.5rem;
+  }
+
+  .main-header .icons div:hover {
+    color: white;
+  }
+
+  .home {
+    padding: 0;
+  }
+
+  .home .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60rem;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .home .slide .content {
+    width: 50rem;
+  }
+
+  .home .slide .content h3 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: #444;
+    color: #fff;
+  }
+
+  .footer {
+    background: rgb(237,90,179);
+  }
+
+  .footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+  }
+
+  .footer .box-container .box h3 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: rgb(184,232,248);
+    padding: 1rem 0;
+  }
+
+  .footer .box-container .box h3 i {
+    color: rgb(184,232,248);
+  }
+
+  .footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    background-color: rgb(184,232,248);
+    color: rgb(237,90,179);
+    margin-right: .3rem;
+    text-align: center;
+  }
+
+  .footer .box-container .box .share a:hover {
+    background-color: white;
+  }
+
+  .footer .box-container .box .link {
+    font-size: 1.7rem;
+    line-height: 2;
+    color: rgb(184,232,248);
+    padding: .5rem 0;
+    display: block;
+  }
+
+  .footer .box-container .box .link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .footer .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: rgb(184,232,248);
+    padding: 1rem 0;
+  }
+
+  .footer .credit {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgb(184,232,248);
+    border-top: 0.1rem solid rgb(184,232,248);
+  }
+
+  .footer .credit span {
+    color: rgb(184,232,248);
+  }
+
+  @media (max-width: 1200px) {
+    .header {
+      padding: 2rem 5%;
+    }
+    section {
+      padding: 3rem 5%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      padding: 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .heading {
+      font-size: 3rem;
+    }
+  }
+
+  .info .contain {
+    margin-bottom: 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+  }
+
+  .info .contain .icons {
+    text-align: center;
+    padding: 3rem 2rem;
+    border: 0.1rem solid rgb(90,190,223);
+    background: #f0fdfa;
+  }
+
+  .info .contain .icons i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+    color: #fff;
+    background: rgb(90,190,223);
+  }
+
+  .info .contain .icons h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #444;
+    padding: .5rem 0;
+  }
+
+  .info .contain .icons p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #777;
+  }
+
+  .info .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .info .main form {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+    border: 0.1rem solid rgb(90,190,223);
+    padding: 2rem;
+  }
+
+  .info .main form label {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #444;
+    padding-bottom: 1rem;
+  }
+
+  .info .main form .contain {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border: 0.1rem solid rgb(90,190,223);
+    font-size: 1.6rem;
+    margin: .7rem 0;
+  }
+
+  .info .main form .contain:focus {
+    background: rgb(90,190,223);
+    color: #fff;
+  }
+
+  .info .main form .contain:focus::-webkit-input-placeholder {
+    color: #eee;
+  }
+
+  .info .main form .contain:focus:-ms-input-placeholder {
+    color: #eee;
+  }
+
+  .info .main form .contain:focus::-ms-input-placeholder {
+    color: #eee;
+  }
+
+  .info .main form .contain:focus::placeholder {
+    color: #eee;
+  }
+
+  .info .main form textarea {
+    height: 15rem;
+    resize: none;
+  }
+
+  .container {
+    width: 0 auto; height:200px; border: 0px solid black; margin: 0 auto;
+  }
+  .row {
+    width:0 auto; height:0 auto; border: 2px solid black; margin:0 auto; font: 10px  Arial, sans-serif; text-align: center; background-color: #5AED94;
+  }
+  .product,.quantity,.price{
+    margin: 0 auto; background-color: rgb(211,211,211);
+  }
+  .col{
+    width: 0 auto; height:0 auto;
+  }
+  table, th, {
+    border: 2px solid black;
+  }
+  td {
+    text-align: center;
+  }
+  .btn {
+    background-color: #219BA5;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+    padding: 5px 15px;
+  }
+  .checkoutSec{
+    background-color: rgb(211,211,211); margin:1px;
+
+  }
+  .Myorderhistory{
+    background-color: rgb(211,211,211); margin:2px;
+
+  }

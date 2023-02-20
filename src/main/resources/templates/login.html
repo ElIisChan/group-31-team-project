@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- header section starts  -->
+
+<header class="main-header">
+
+  <a href="#" class="logo"> G.V.D.</a>
+
+  <nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div> <!-- allows the user to select the page they want using the navigation bar at the top -->
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="basket.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+      <a href="logout.html">Logout</a>
+  </nav>
+
+</header>
+
+<body>
+<h1>Login Page</h1>
+<form onsubmit="return validateForm()">
+  <label for="username">Email address:</label>
+  <input type="text" id="username" name="username">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+
+  <label for="remember-me"><input type="checkbox" id="remember-me" name="remember-me"> Remember Me</label>
+
+  <input type="submit" value="Submit">
+  <div class="error-message" id="error-message"></div>
+
+  <div class="forgot-password" id="forgot-password">Forgot Password?</div>
+</form>
+
+<script>
+  function validateForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if (username == "") {
+      document.getElementById("error-message").innerHTML = "Please enter your Email Address.";
+      return false;
+    }
+
+    if (password == "") {
+      document.getElementById("error-message").innerHTML = "Please enter your password.";
+      return false;
+    }
+
+    // If everything is valid, clear error message and allow form submission
+    document.getElementById("error-message").innerHTML = "";
+    return true;
+  }
+</script>
+<br><br><br>
+
+<!-- header section ends -->
+  <!-- footer section starts  -->
+
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>company name </h3>
+        <p>description of company</p>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="index.html" class="link">Home</a> <!-- allows the user to navigate through the pages using the links in the footer -->
+        <a href="aboutus.html" class="link">About Us</a>
+        <a href="products.html" class="link">Products</a>
+        <a href="contact.html" class="link">Contact Us</a>
+        <a href="logout.html" class="link">Logout</a>
+        <a href="basket.html" class="link">Basket</a>
+      </div>
+
+    </div>
+
+    <div class="credit"> created by <span>Group 31</span></div>
+
+  </section>
+
+  <!-- footer section ends -->
+
+  <style type="text/css">
+
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+    * {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      -webkit-transition: all .2s linear;
+      transition: all .2s linear;
+    }
+
+    img {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    html {
+      font-size: 62.5%;
+      overflow-x: hidden;
+    }
+
+    html::-webkit-scrollbar {
+      width: 1rem;
+    }
+
+    html::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    html::-webkit-scrollbar-thumb {
+      background: rgb(90,190,223);
+    }
+
+    section {
+      padding: 5rem 10%;
+    }
+
+    .heading-link h3 {
+      font-size: 4rem;
+      text-transform: capitalize;
+      color: #444;
+    }
+
+    .heading-link p {
+      font-size: 2rem;
+      line-height: 2;
+      color: #777;
+    }
+
+    .heading-link p a {
+      color: rgb(90,190,223);
+    }
+
+    .heading-link p a:hover {
+      text-decoration: underline;
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 3.5rem;
+      text-transform: capitalize;
+      color: #444;
+    }
+
+    .main-header {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgb(237,90,179);
+      -webkit-box-shadow: 0 0.5rem 1rem rgb(90,190,223);
+      box-shadow: 0 0.5rem 1rem rgb(90,190,223);
+      padding: 2rem 10%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .main-header .logo {
+      margin-right: auto;
+      font-size: 2.5rem;
+      text-transform: capitalize;
+      color: rgb(184,232,248);
+      font-weight: bolder;
+    }
+
+    .main-header .logo i {
+      color: rgb(184,232,248);
+    }
+
+    .main-header .navbar {
+      position: relative;
+    }
+
+    .main-header .navbar #close-navbar {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      font-size: 4rem;
+      cursor: pointer;
+      color: #444;
+      display: none;
+    }
+
+    .main-header .navbar #close-navbar:hover {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+
+    .main-header .navbar a {
+      margin-right: 2rem;
+      font-size: 2rem;
+      text-transform: capitalize;
+      color: rgb(184,232,248);
+    }
+
+    .main-header .navbar a:hover {
+      color: white;
+    }
+
+    .main-header .icons div {
+      cursor: pointer;
+      font-size: 2.5rem;
+      color: #444;
+      margin-left: 1.5rem;
+    }
+
+    .main-header .icons div:hover {
+      color: white;
+    }
+
+    .home {
+      padding: 0;
+    }
+
+    .home .slide {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 60rem;
+      background-size: cover !important;
+      background-position: center !important;
+    }
+
+    .home .slide .content {
+      width: 50rem;
+    }
+
+    .home .slide .content h3 {
+      font-size: 5rem;
+      text-transform: capitalize;
+      color: #444;
+      color: #fff;
+    }
+
+    .footer {
+      background: rgb(237,90,179);
+    }
+
+    .footer .box-container {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      gap: 2rem;
+    }
+
+    .footer .box-container .box h3 {
+      font-size: 2.2rem;
+      text-transform: capitalize;
+      color: rgb(184,232,248);
+      padding: 1rem 0;
+    }
+
+    .footer .box-container .box h3 i {
+      color: rgb(184,232,248);
+    }
+
+    .footer .box-container .box .share a {
+      height: 4.5rem;
+      width: 4.5rem;
+      line-height: 4.5rem;
+      font-size: 1.7rem;
+      background-color: rgb(184,232,248);
+      color: rgb(237,90,179);
+      margin-right: .3rem;
+      text-align: center;
+    }
+
+    .footer .box-container .box .share a:hover {
+      background-color: white;
+    }
+
+    .footer .box-container .box .link {
+      font-size: 1.7rem;
+      line-height: 2;
+      color: rgb(184,232,248);
+      padding: .5rem 0;
+      display: block;
+    }
+
+    .footer .box-container .box .link:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .footer .box-container .box p {
+      font-size: 1.5rem;
+      line-height: 2;
+      color: rgb(184,232,248);
+      padding: 1rem 0;
+    }
+
+    .footer .credit {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 3rem;
+      font-size: 2rem;
+      text-transform: capitalize;
+      color: rgb(184,232,248);
+      border-top: 0.1rem solid rgb(184,232,248);
+    }
+
+    .footer .credit span {
+      color: rgb(184,232,248);
+    }
+
+    @media (max-width: 1200px) {
+      .header {
+        padding: 2rem 5%;
+      }
+      section {
+        padding: 3rem 5%;
+      }
+    }
+
+    @media (max-width: 991px) {
+      html {
+        font-size: 55%;
+      }
+      .header {
+        padding: 2rem;
+      }
+      section {
+        padding: 3rem 2rem;
+      }
+    }
+
+    @media (max-width: 450px) {
+      html {
+        font-size: 50%;
+      }
+      .heading {
+        font-size: 3rem;
+      }
+    }
+
+    .info .contain {
+      margin-bottom: 3rem;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      gap: 2rem;
+    }
+
+    .info .contain .icons {
+      text-align: center;
+      padding: 3rem 2rem;
+      border: 0.1rem solid rgb(90,190,223);
+      background: #f0fdfa;
+    }
+
+    .info .contain .icons i {
+      height: 6rem;
+      width: 6rem;
+      line-height: 6rem;
+      font-size: 2rem;
+      border-radius: 50%;
+      margin-bottom: .5rem;
+      color: #fff;
+      background: rgb(90,190,223);
+    }
+
+    .info .contain .icons h3 {
+      font-size: 2rem;
+      text-transform: capitalize;
+      color: #444;
+      padding: .5rem 0;
+    }
+
+    .info .contain .icons p {
+      font-size: 1.5rem;
+      line-height: 2;
+      color: #777;
+    }
+
+    .info .main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .info .main form {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+      flex: 1 1 40rem;
+      border: 0.1rem solid rgb(90,190,223);
+      padding: 2rem;
+    }
+
+    .info .main form label {
+      font-size: 2rem;
+      text-transform: capitalize;
+      color: #444;
+      padding-bottom: 1rem;
+    }
+
+    .info .main form .contain {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      border: 0.1rem solid rgb(90,190,223);
+      font-size: 1.6rem;
+      margin: .7rem 0;
+    }
+
+    .info .main form .contain:focus {
+      background: rgb(90,190,223);
+      color: #fff;
+    }
+
+    .info .main form .contain:focus::-webkit-input-placeholder {
+      color: #eee;
+    }
+
+    .info .main form .contain:focus:-ms-input-placeholder {
+      color: #eee;
+    }
+
+    .info .main form .contain:focus::-ms-input-placeholder {
+      color: #eee;
+    }
+
+    .info .main form .contain:focus::placeholder {
+      color: #eee;
+    }
+
+    .info .main form textarea {
+      height: 15rem;
+      resize: none;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      color: #555;
+      text-shadow: 1px 1px #ccc;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #888888;
+      width: 300px;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="checkbox"] {
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: background-color 0.2s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    input[type="submit"]:focus {
+      outline: none;
+      box-shadow: 0px 0px 5px #4CAF50;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+      outline: none;
+      border-color: #4CAF50;
+      box-shadow: 0px 0px 5px #4CAF50;
+    }
+
+    .error-message {
+      color: #ff0000;
+      margin-top: 10px;
+    }
+
+    .forgot-password {
+      text-align: center;
+      margin-top: 10px;
+      color: #555;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .forgot-password:hover {
+      color: #4CAF50;
+    }
