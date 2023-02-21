@@ -29,6 +29,7 @@
     <a href="products.html">Products</a>
     <a href="contact.html">Contact Us</a>
     <a href="basket.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+      <a href="Register.html" class="link">Register</a>
       <a href="logout.html">Logout</a>
   </nav>
 
@@ -49,6 +50,7 @@
   <div class="error-message" id="error-message"></div>
 
   <div class="forgot-password" id="forgot-password">Forgot Password?</div>
+  <div class="register" id="register"><a href="register.html">Don't have and account with us? Register Here</a></div>
 </form>
 
 <script>
@@ -62,7 +64,7 @@
     }
 
     if (password == "") {
-      document.getElementById("error-message").innerHTML = "Please enter your password.";
+      document.getElementById("error-message").innerHTML = "Please enter your Password.";
       return false;
     }
 
@@ -91,6 +93,7 @@
         <a href="aboutus.html" class="link">About Us</a>
         <a href="products.html" class="link">Products</a>
         <a href="contact.html" class="link">Contact Us</a>
+        <a href="Register.html" class="link">Register</a>
         <a href="logout.html" class="link">Logout</a>
         <a href="basket.html" class="link">Basket</a>
       </div>
@@ -556,5 +559,17 @@
     }
 
     .forgot-password:hover {
+      color: #4CAF50;
+    }
+
+    .register {
+      text-align: center;
+      margin-top: 10px;
+      color: #555;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .register {
       color: #4CAF50;
     }
