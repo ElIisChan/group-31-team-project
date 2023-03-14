@@ -36,7 +36,7 @@
 </header>
 
 <body>
-<h1>Login Page</h1>
+<h1>Admin Login</h1>
 <form onsubmit="return validateForm()">
   <label for="username">Email address:</label>
   <input type="text" id="username" name="username">
@@ -44,19 +44,14 @@
   <label for="password">Password:</label>
   <input type="password" id="password" name="password">
 
-  <label for="remember-me"><input type="checkbox" id="remember-me" name="remember-me"> Remember Me</label>
 
   <input type="submit" value="Submit">
   <div class="error-message" id="error-message"></div>
 
   <div class="forgot-password" id="forgot-password">Forgot Password?</div>
-  <div class="register" id="register"><a href="register.html">Don't have and account with us? Register Here</a></div>
 
 </form>
 
-<body>
-  <button class="adminbutton">Admin Login</button>
-</body>
 
 <script>
   function validateForm() {
@@ -570,17 +565,5 @@
     }
 
     .forgot-password:hover {
-      color: rgb(39,40,92);
-    }
-
-    .register {
-      text-align: center;
-      margin-top: 10px;
-      color: #555;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    .register {
       color: rgb(39,40,92);
     }
