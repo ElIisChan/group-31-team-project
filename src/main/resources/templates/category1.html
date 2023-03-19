@@ -42,12 +42,14 @@
    <h3>Drinks</h3>
    <p> <a href="index.html">home</a> / Drinks </p> <!-- links the home heading on the contact me page back to the home page -->
 </section>
-
+    <div class="filter-bar">
+    <input type="text" id="input" onkeyup="filterProducts()" placeholder="Search for a product">
+    </div>
 <section class="products">
 
 <h1 class="heading">Our Products</h1>
 
-<div class="box-container"> <!-- creates the box for the image and text to be placed in -->
+<div class="box-container" id="productContainer"> <!-- creates the box for the image and text to be placed in -->
 
   <div class="product">
     <img src="images/Mineral Water.jpg" alt="Mineral water"> <!--  -->
@@ -83,6 +85,23 @@
 
 </section>
 
+    <script>
+        const products = document.querySelectorAll('.product');
+
+        function filterProducts() {
+            const input = document.getElementById('input').value.toLowerCase();
+
+            for (let i = 0; i < products.length; i++) {
+                const productName = products[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+
+                if (productName.includes(input)) {
+                    products[i].style.display = 'block';
+                } else {
+                    products[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
 
 <section class="footer">
 
@@ -423,4 +442,22 @@ section {
   text-transform: capitalize;
   color: #444;
   padding: .5rem 0;
+}
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.filter-bar input[type="text"] {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
 }
