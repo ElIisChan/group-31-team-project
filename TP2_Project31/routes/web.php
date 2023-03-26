@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShowController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,12 +35,11 @@ Route::get('/', function () {
 });
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-// Route::get('/aboutus', '\App\Http\Controllers\AboutusController');
 
 Auth::routes();
 
-Route::get('/homepage', [App\Http\Controllers\HomeController::class, 'index'])->name('homepage');
 Route::get('/homepage', [App\Http\Controllers\HomepageController::class, 'index'])->name('homepage');
+Route::get('/home', [App\Http\Controllers\HomepageController::class, 'index'])->name('home');
 Route::get('/aboutus', [App\Http\Controllers\AboutusController::class, 'index'])->name('aboutus');
 
 Route::get('/products', [App\Http\Controllers\ProductsController::class, 'index'])->name('products');
@@ -48,6 +48,10 @@ Route::get('/category2', [App\Http\Controllers\Category2Controller::class, 'inde
 Route::get('/category3', [App\Http\Controllers\Category3Controller::class, 'index'])->name('category3');
 Route::get('/category4', [App\Http\Controllers\Category4Controller::class, 'index'])->name('category4');
 Route::get('/category5', [App\Http\Controllers\Category5Controller::class, 'index'])->name('category5');
+Route::get('/basket', [App\Http\Controllers\BasketController::class, 'index'])->name('basket');
 
+// Basket
+// Route::post('/add-to-basket/{id}', [BasketController::class, 'addToBasket'])->name('addToBasket');
+Route::get('/category1', [App\Http\Controllers\ShowController::class, 'show']);
 
 Route::get('/contactus', [App\Http\Controllers\ContactUsController::class, 'index'])->name('contactus');

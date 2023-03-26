@@ -28,7 +28,7 @@
       <div class="swiper-wrapper">
 
          <section  style="background: url(/images/food.jpg);"> <!-- https://en.wikipedia.org/wiki/Food -->
-            <img class="swiper-slide slide" src="/front-end/images/food.jpg" width= 100%>
+            <img class="swiper-slide slide" src="/front-end/images/food.jpg">
          <div class="content">
                <!-- <h3>Good Value Dinners</h3> -->
             </div>
