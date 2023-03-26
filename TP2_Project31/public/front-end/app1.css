@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: rgb(39,40,92);
+  background: rgb(90,190,223);
 }
 
 section {
@@ -59,7 +59,7 @@ section {
 }
 
 .heading-link p a {
-  color: rgb(39,40,92);
+  color: rgb(90,190,223);
 }
 
 .heading-link p a:hover {
@@ -80,9 +80,9 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  background: rgb(39,40,92);
-  -webkit-box-shadow: 0 0.5rem 1rem rgb(255,255,255);
-          box-shadow: 0 0.5rem 1rem rgb(255,255,255);
+  background: rgb(237,90,179);
+  -webkit-box-shadow: 0 0.5rem 1rem rgb(90,190,223);
+          box-shadow: 0 0.5rem 1rem rgb(90,190,223);
   padding: 2rem 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,12 +97,12 @@ section {
   margin-right: auto;
   font-size: 2.5rem;
   text-transform: capitalize;
-  color: rgb(255,255,255);
+  color: rgb(184,232,248);
   font-weight: bolder;
 }
 
 .main-header .logo i {
-  color: rgb(255,255,255);
+  color: rgb(184,232,248);
 }
 
 .main-header .navbar {
@@ -128,7 +128,7 @@ section {
   margin-right: 2rem;
   font-size: 2rem;
   text-transform: capitalize;
-  color: rgb(255,255,255);
+  color: rgb(184,232,248);
 }
 
 .main-header .navbar a:hover {
@@ -173,12 +173,8 @@ section {
   color: #fff;
 }
 
-.home .swiper home-slider {
-  width: "100";
-}
-
 .footer {
-  background: rgb(39,40,92);
+  background: rgb(237,90,179);
 }
 
 .footer .box-container {
@@ -192,12 +188,12 @@ section {
 .footer .box-container .box h3 {
   font-size: 2.2rem;
   text-transform: capitalize;
-  color: rgb(255,255,255);
+  color: rgb(184,232,248);
   padding: 1rem 0;
 }
 
 .footer .box-container .box h3 i {
-  color: rgb(255,255,255);
+  color: rgb(184,232,248);
 }
 
 .footer .box-container .box .share a {
@@ -205,8 +201,8 @@ section {
   width: 4.5rem;
   line-height: 4.5rem;
   font-size: 1.7rem;
-  background-color: rgb(255,255,255);
-  color: rgb(39,40,92);
+  background-color: rgb(184,232,248);
+  color: rgb(237,90,179);
   margin-right: .3rem;
   text-align: center;
 }
@@ -218,7 +214,7 @@ section {
 .footer .box-container .box .link {
   font-size: 1.7rem;
   line-height: 2;
-  color: rgb(255,255,255);
+  color: rgb(184,232,248);
   padding: .5rem 0;
   display: block;
 }
@@ -231,7 +227,7 @@ section {
 .footer .box-container .box p {
   font-size: 1.5rem;
   line-height: 2;
-  color: rgb(255,255,255);
+  color: rgb(184,232,248);
   padding: 1rem 0;
 }
 
@@ -241,12 +237,12 @@ section {
   padding-top: 3rem;
   font-size: 2rem;
   text-transform: capitalize;
-  color: rgb(255,255,255);
-  border-top: 0.1rem solid rgb(255,255,255);
+  color: rgb(184,232,248);
+  border-top: 0.1rem solid rgb(184,232,248);
 }
 
 .footer .credit span {
-  color: rgb(255,255,255);
+  color: rgb(184,232,248);
 }
 
 @media (max-width: 1200px) {
@@ -291,7 +287,7 @@ section {
 .info .contain .icons {
   text-align: center;
   padding: 3rem 2rem;
-  border: 0.1rem solid rgb(39,40,92);
+  border: 0.1rem solid rgb(90,190,223);
   background: #f0fdfa;
 }
 
@@ -303,7 +299,7 @@ section {
   border-radius: 50%;
   margin-bottom: .5rem;
   color: #fff;
-  background: rgb(39,40,92);
+  background: rgb(90,190,223);
 }
 
 .info .contain .icons h3 {
@@ -323,7 +319,7 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  border: 0.1rem solid rgb(255,255,255);
+  border: 0.1rem solid rgb(90,190,223);
   padding: 2rem;
 }
 
@@ -337,13 +333,13 @@ section {
 .info .main form .contain {
   width: 100%;
   padding: 1.2rem 1.4rem;
-  border: 0.1rem solid rgb(255,255,255);
+  border: 0.1rem solid rgb(90,190,223);
   font-size: 1.6rem;
   margin: .7rem 0;
 }
 
 .info .main form .contain:focus {
-  background: rgb(255,255,255);
+  background: rgb(90,190,223);
   color: #fff;
 }
 
@@ -358,7 +354,7 @@ section {
 .about .box-container .member {
     padding: 3rem 2rem;
     text-align: center;
-    border: 0.1rem solid rgb(39,40,92);
+    border: 0.1rem solid rgb(90,190,223);
     background: white;
   }
   
@@ -379,15 +375,15 @@ section {
     margin-top: 1rem;
     padding: 1rem 3rem;
     font-size: 1.8rem;
-    border: 0.1rem solid rgb(39,40,92);
+    border: 0.1rem solid rgb(90,190,223);
     background: #f0fdfa;
-    color: rgb(39,40,92);
+    color: rgb(90,190,223);
     cursor: pointer;
     text-transform: capitalize;
   }
   
 .btn:hover {
-    background: rgb(39,40,92);
+    background: rgb(90,190,223);
     color: #fff;
   }
 
@@ -402,7 +398,7 @@ section {
 .products .box-container .category {
     padding: 3rem 2rem;
     text-align: center;
-    border: 0.1rem solid rgb(39,40,92);
+    border: 0.1rem solid rgb(90,190,223);
     background: white;
   }
   
@@ -430,7 +426,7 @@ section {
 .contact .submit .icons {
     text-align: center;
     padding: 3rem 2rem;
-    border: 0.1rem solid rgb(39,40,92);
+    border: 0.1rem solid rgb(90,190,223);
     background: #f0fdfa;
   }
   
@@ -442,7 +438,7 @@ section {
     border-radius: 50%;
     margin-bottom: .5rem;
     color: #fff;
-    background: rgb(39,40,92);
+    background: rgb(90,190,223);
   }
   
 .contact .submit .icons h3 {
@@ -474,7 +470,7 @@ section {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 40rem;
             flex: 1 1 40rem;
-    border: 0.1rem solid rgb(39,40,92);
+    border: 0.1rem solid rgb(90,190,223);
     padding: 2rem;
   }
   
@@ -488,13 +484,13 @@ section {
 .contact .main form .box {
     width: 100%;
     padding: 1.2rem 1.4rem;
-    border: 0.1rem solid rgb(39,40,92);
+    border: 0.1rem solid rgb(90,190,223);
     font-size: 1.6rem;
     margin: .7rem 0;
   }
   
 .contact .main form .box:focus {
-    background: rgb(39,40,92);
+    background: rgb(90,190,223);
     color: #fff;
   }
   
@@ -530,7 +526,7 @@ section {
 .products .box-container .product {
     padding: 3rem 2rem;
     text-align: center;
-    border: 0.1rem solid rgb(39,40,92);
+    border: 0.1rem solid rgb(90,190,223);
     background: white;
   }
   
@@ -584,7 +580,7 @@ input[type="checkbox"] {
   }
 
 input[type="submit"] {
-    background-color: rgb(39,40,92);
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -597,18 +593,18 @@ input[type="submit"] {
   }
 
 input[type="submit"]:hover {
-    background-color: rgb(39,40,92);
+    background-color: #45a049;
   }
 
 input[type="submit"]:focus {
     outline: none;
-    box-shadow: 0px 0px 5px rgb(39,40,92);
+    box-shadow: 0px 0px 5px #4CAF50;
   }
 
 input[type="text"]:focus, input[type="password"]:focus {
     outline: none;
-    border-color: rgb(39,40,92);
-    box-shadow: 0px 0px 5px rgb(39,40,92);
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 5px #4CAF50;
   }
 
 .error-message {
@@ -625,7 +621,7 @@ input[type="text"]:focus, input[type="password"]:focus {
   }
 
 .forgot-password:hover {
-    color: rgb(39,40,92);
+    color: #4CAF50;
   }
 
 .register {
@@ -637,7 +633,7 @@ input[type="text"]:focus, input[type="password"]:focus {
   }
 
 .register {
-    color: rgb(39,40,92);
+    color: #4CAF50;
   }
 
 .container {
@@ -721,7 +717,7 @@ select {
   }
 
 input[type="submit"] {
-    background-color: rgb(39,40,92);
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 3px;
@@ -731,7 +727,7 @@ input[type="submit"] {
   }
 
 input[type="submit"]:hover {
-    background-color: rgb(39,40,92);
+    background-color: #3e8e41;
   }
 
 .error {
@@ -749,5 +745,105 @@ input[type="submit"]:hover {
   }
 
 .login {
-    color: rgb(39,40,92);
+    color: #4CAF50;
   }
+
+
+
+
+  #cart-container {
+    overflow-x: auto;
+ }
+
+#cart-container table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+ }
+
+#cart-container table thead {
+    font-weight: 700;
+ }
+
+#cart-container table thead td {
+    background-color: rgb(237, 90, 179);
+    color: white;
+    border: none;
+    padding: 6px 0;
+ }
+
+#cart-container table td {
+    border: 1px solid black;
+    text-align: center;
+ }
+
+#cart-container table td:nth-child(1) {
+    width: 100px;
+ }
+
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3) {
+    width: 200px;
+ }
+
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+    width: 170px;
+ }
+
+#cart-container table tbody img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+ }
+
+#cart-bottom .coupon > div,
+#cart-bottom .total > div {
+    border: 1px solid black;
+ }
+
+#cart-bottom .coupon h5,
+#cart-bottom .total h5 {
+    background-color: rgb(237, 90, 179);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+ }
+
+#cart-bottom .coupon p,
+#cart-bottom .coupon input {
+    padding: 0 12px;
+
+ }
+
+#cart-bottom .coupon input {
+    height: 44px;
+ }
+
+#cart-bottom .coupon input,
+#cart-bottom .coupon button {
+    margin: 0 0 20px 12px;
+ }
+
+#cart-bottom .total div > div {
+    padding: 0 12px;
+ }
+
+#cart-bottom .total h6 {
+    color: #2a2a2a;
+ }
+
+.second-hr {
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+ }
+
+#cart-bottom .total div > button {
+ margin: 0 12px 20px 0;
+ display: flex;
+ justify-content: flex-end;
+}

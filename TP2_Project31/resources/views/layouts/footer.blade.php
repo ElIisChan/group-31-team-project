@@ -11,14 +11,14 @@
 
       <div class="box">
          <h3>quick links</h3>
-         <a href="index.html" class="link">Home</a> <!-- allows the user to navigate through the pages using the links in the footer -->
-         <a href="aboutus.html" class="link">About Us</a>
-         <a href="products.html" class="link">Products</a>
-         <a href="contact.html" class="link">Contact Us</a>
-         <a href="Register.html" class="link">Register</a>
-         <a href="login.html" class="link">Login</a>
-         <a href="logout.html" class="link">Logout</a>
-         <a href="basket.html" class="link">Basket</a>
+         <a href="{{('homepage') }} " class="link">Home</a> <!-- allows the user to navigate through the pages using the links in the footer -->
+         <a href="{{('aboutus') }}" class="link">About Us</a>
+         <a href="{{('products') }}" class="link">Products</a>
+         <a href="{{('contactus') }}" class="link">Contact Us</a>
+         <a href="{{route('login') }}" class="link">Login</a> 
+         <a href="{{route('register') }}" class="link">Register</a>
+         <a href="{{ url('/logout') }}" class="link">Logout</a>
+         <a href="{{('basket') }}" class="link">Basket</a>
       </div>
 
    </div>
