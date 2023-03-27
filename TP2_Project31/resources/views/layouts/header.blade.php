@@ -30,12 +30,21 @@
       <a href="{{('aboutus') }} ">About Us</a>
       <a href="{{('products') }}">Products</a>
       <a href="{{('contactus') }}">Contact Us</a>
-      <a href="{{('basket') }}"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+      <!-- <a href="{{('basket') }}"><i class="fa fa-shopping-basket" aria-hidden="true"></i> -->
       <a href="{{route('login') }}" class="link">Login</a> 
       <a href="{{route('register') }}" class="link">Register</a>
-      <a href="{{ url('/logout') }}" class="link">Logout</a>
+      
         <!-- <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a> -->
       
+
+        @if (Route::has('login'))
+             @auth
+
+         <a href="{{('basket') }}"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+         <a href="{{ url('/logout') }}" class="link">Logout</a>
+
+        @endif
+      @endauth   
    </nav>
 
 </header>
