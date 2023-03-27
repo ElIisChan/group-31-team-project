@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Drinks</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+<!-- header section starts  -->
+
+<header class="main-header">
+
+    <a href="#" class="logo"> G.V.D.</a>
+
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div> <!-- allows the headers to be clicked and take the user to the different pages -->
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="basket.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          <a href="Register.html" class="link">Register</a>
+          <a href="login.html" class="link">Login</a>
+      <a href="logout.html">Logout</a>
+   </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<section class="heading-link">
+   <h3>Drinks</h3>
+   <p> <a href="index.html">home</a> / Drinks </p> <!-- links the home heading on the contact me page back to the home page -->
+
+    <div class = "filtering-system">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter Items by:
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Juices</a>
+                <a class="dropdown-item" href="#">Carbonated Drinks</a>
+                <a class="dropdown-item" href="#">Water</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="products">
+
+<h1 class="heading">Our Products</h1>
+
+<div class="box-container"> <!-- creates the box for the image and text to be placed in -->
+
+  <div class="product">
+    <img src="images/Mineral Water.jpg" alt="Mineral water"> <!--  -->
+    <h3>Mineral Water</h3>
+    <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
+ </div>
+
+ <div class="product">
+  <img src="images/Orange Juice.jpg" alt="Orange juice"> <!--  -->
+  <h3>Orange Juice</h3>
+  <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
+</div>
+
+<div class="product">
+  <img src="images/Apple Juice.jpeg" alt="Apple juice"> <!--  -->
+  <h3>Apple Juice</h3>
+  <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
+</div>
+
+<div class="product">
+  <img src="images/Pomegranate Juice.jpg" alt="Pomegranate Juice"> <!--  -->
+  <h3>Pomegranate Juice</h3>
+  <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
+</div>
+
+<div class="product">
+  <img src="images/Beetroot Juice.jpg" alt="Beetroot Juice"> <!--  -->
+  <h3>Beet Juice</h3>
+  <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>Good Value Dinners</h3>
+         <p>At Good Value Dinners we use fresh food and we cater for all no matter what your allergies or dietary requirements may be. We also use local farms in order to give back to communities allowing for reinvestment and development of them, this also lowers are carbon footprint making us environmentally friendly. We hope you enjoy our service and continue to use it for many more years.</p>
+         <div class="share">
+</div>
+      </div>
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="index.html" class="link">Home</a> <!-- creates links to all pages in the footer -->
+         <a href="aboutus.html" class="link">About Us</a>
+         <a href="products.html" class="link">Products</a>
+         <a href="contact.html" class="link">Contact Us</a>
+          <a href="Register.html" class="link">Register</a>
+          <a href="login.html" class="link">Login</a>
+         <a href="logout.html" class="link">Logout</a>
+         <a href="basket.html" class="link">Basket</a>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>Group 31</span></div>
+
+</section>
+
+</body>
+</html>
+
+<!-- footer section ends -->
+
+<style type="text/css">
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(90,190,223);
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.heading-link {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.heading-link h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.heading-link p {
+  font-size: 2rem;
+  line-height: 2;
+  color: #777;
+}
+
+.heading-link p a {
+  color: rgb(90,190,223);
+}
+
+.heading-link p a:hover {
+  text-decoration: underline;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(90,190,223);
+  background: #f0fdfa;
+  color: rgb(90,190,223);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background: rgb(90,190,223);
+  color: #fff;
+}
+
+.main-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(237,90,179);
+  -webkit-box-shadow: 0 0.5rem 1rem rgb(90,190,223);
+          box-shadow: 0 0.5rem 1rem rgb(90,190,223);
+  padding: 2rem 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+}
+
+.main-header .logo {
+  margin-right: auto;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: rgb(184,232,248);
+  font-weight: bolder;
+}
+
+.main-header .logo i {
+  color: rgb(184,232,248);
+}
+
+.main-header .navbar {
+  position: relative;
+}
+
+.main-header .navbar #close-navbar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #444;
+  display: none;
+}
+
+.main-header .navbar #close-navbar:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.main-header .navbar a {
+  margin-right: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(184,232,248);
+}
+
+.main-header .navbar a:hover {
+  color: white;
+}
+
+.main-header .icons div {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #444;
+  margin-left: 1.5rem;
+}
+
+.main-header .icons div:hover {
+  color: white;
+}
+
+.footer {
+  background: rgb(237,90,179);
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: rgb(184,232,248);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+  color: rgb(184,232,248);
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background-color: rgb(184,232,248);
+  color: rgb(237,90,179);
+  margin-right: .3rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background-color: white;
+}
+
+.footer .box-container .box .link {
+  font-size: 1.7rem;
+  line-height: 2;
+  color: rgb(184,232,248);
+  padding: .5rem 0;
+  display: block;
+}
+
+.footer .box-container .box .link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: rgb(184,232,248);
+  padding: 1rem 0;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(184,232,248);
+  border-top: 0.1rem solid rgb(184,232,248);
+}
+
+.footer .credit span {
+  color: rgb(184,232,248);
+}
+
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem 5%;
+  }
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+.products .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+
+.products .box-container .product {
+  padding: 3rem 2rem;
+  text-align: center;
+  border: 0.1rem solid rgb(90,190,223);
+  background: white;
+}
+
+.products .box-container .product img {
+  height: 10rem;
+  margin-bottom: .7rem;
+}
+
+.products .box-container .product h3 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: .5rem 0;
+}
+
+.filtering-system{
+  margin:0 0 0 auto;
+  max-width: 150px;
+
+}
+.dropdown-item{
+   width: 160px;
+   font-size: 15px;
+ }
+
+
