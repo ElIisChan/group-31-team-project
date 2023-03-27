@@ -48,10 +48,13 @@ Route::get('/category2', [App\Http\Controllers\Category2Controller::class, 'inde
 Route::get('/category3', [App\Http\Controllers\Category3Controller::class, 'index'])->name('category3');
 Route::get('/category4', [App\Http\Controllers\Category4Controller::class, 'index'])->name('category4');
 Route::get('/category5', [App\Http\Controllers\Category5Controller::class, 'index'])->name('category5');
-Route::get('/basket', [App\Http\Controllers\BasketController::class, 'index'])->name('basket');
+// Route::get('/basket', [App\Http\Controllers\BasketController::class, 'index'])->name('basket');
 
 // Basket
 // Route::post('/add-to-basket/{id}', [BasketController::class, 'addToBasket'])->name('addToBasket');
 Route::get('/category1', [App\Http\Controllers\ShowController::class, 'show']);
+Route::post('/addbasket/{id}',[App\Http\Controllers\HomeController::class, 'addbasket']);
+Route::get('/basket',[App\Http\Controllers\HomeController::class, 'showbasket']);
+Route::get('/delete/{id}',[App\Http\Controllers\HomeController::class, 'deletebasket']);
 
 Route::get('/contactus', [App\Http\Controllers\ContactUsController::class, 'index'])->name('contactus');
