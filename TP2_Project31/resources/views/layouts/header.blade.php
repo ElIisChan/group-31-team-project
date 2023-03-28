@@ -23,7 +23,9 @@
 
 <header class="main-header">
 
-      <a href="{{('homepage') }}" class="logo"> G.V.D.</a>
+      <a href="{{('homepage') }}" class="logo">
+      <img class="logo" src="/front-end/images/logo.jpg" width="250px;" >
+      </a>
    <nav class="navbar">
       <div id="close-navbar" class="fas fa-times"></div> <!-- allows the user to select the page they want using the navigation bar at the top -->
       <a href="{{('homepage') }} ">Home</a>
@@ -42,6 +44,7 @@
 
          <a href="{{('basket') }}"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
          <a href="{{ url('/logout') }}" class="link">Logout</a>
+         <a href="{{('showorder') }}">Orders</a>
 
         @endif
       @endauth   

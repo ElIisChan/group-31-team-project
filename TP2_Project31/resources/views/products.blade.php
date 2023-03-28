@@ -16,31 +16,36 @@
 
    <div class="category">
       <img src="" alt=""> <!--  -->
-      <h3>category 1</h3>
+      <h3>Drinks</h3>
+      <img class="swiper-slide slide" src="/front-end/images/Drinks.jpg" width="100%;" padding="none;">
       <a class="btn" href="{{('category1') }} ">View Category</a>
       </div>
 
    <div class="category">
       <img src="" alt=""> <!--  -->
-      <h3>category 2</h3>
+      <h3>Meat</h3>
+      <img class="swiper-slide slide" src="/front-end/images/Meat.jpg" width="100%;" padding="none;">
       <a class="btn" href="{{('category2') }} ">View Category</a>
       </div>
 
    <div class="category">
       <img src="" alt=""> <!--  -->
-      <h3>category 3</h3>
+      <h3>Seafood</h3>
+      <img class="swiper-slide slide" src="/front-end/images/Seafood.jpg" width="100%;" padding="none;">
       <a class="btn" href="{{('category3') }} ">View Category</a>
       </div>
 
    <div class="category">
       <img src="" alt=""> <!--  -->
-      <h3>category 4</h3>
+      <h3>Chinese Food</h3>
+      <img class="swiper-slide slide" src="/front-end/images/Chinese.jpg" width="100%;" padding="none;">
       <a class="btn" href="{{('category4') }} ">View Category</a>
       </div>
 
    <div class="category">
       <img src="" alt=""> <!--  -->
-      <h3>category 5</h3>
+      <h3>Vegetables</h3>
+      <img class="swiper-slide slide" src="/front-end/images/Veg.jpg" width="100%;" padding="none;">
       <a class="btn" href="{{('category5') }} ">View Category</a>
       </div>
 

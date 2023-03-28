@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use App\Models\Basket;
 use App\Models\Product;
+use App\Models\Order;
 
 class HomeController extends Controller
 {
@@ -77,6 +79,61 @@ class HomeController extends Controller
 
         $data=basket::find($id);
         $data->delete();
+
+        return redirect()->back();
+    }
+
+    public function confirmorder(Request $request) 
+    {
+
+        $user=auth()->user();
+
+        $name=$user->name;
+        $email=$user->email;
+
+        foreach($request->productname as $key=>$productname) 
+        {
+
+            $order=new order;
+
+            $order->product_name=$request->productname[$key];
+            $order->product_description=$request->productdescription[$key];
+            $order->quantity=$request->quantity[$key];
+            $order->price=$request->price[$key];
+
+            $order->name=$name;
+            $order->email=$email;
+
+            $order->status='pending';
+
+            $order->save();
+
+            
+
+        }
+
+        DB::table('baskets')->where('name', $name)->delete();
+
+        return redirect()->back()->with('message', 'Order Placed');;
+
+
+    }
+
+    public function showorder() 
+    {
+        $user=auth()->user();
+
+        $history=order::where('name', $user->name)->get();
+
+        return view('showorder', compact('history'));
+
+    }
+
+    public function deleteorder($id) 
+    {
+
+        $data1=order::find($id);
+        $data1->delete();
 
         return redirect()->back();
     }

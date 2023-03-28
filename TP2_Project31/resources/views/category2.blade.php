@@ -4,7 +4,7 @@
 @section('main-container')
 
 <section class="heading-link">
-   <h3>Category 2</h3>
+   <h3>Meat Items</h3>
    <p> <a href="{{('homepage') }}">home</a> / category 2 </p> <!-- links the home heading on the contact me page back to the home page -->
 </section>
 
@@ -16,31 +16,36 @@
   
     <div class="product">
       <img src="" alt=""> <!--  -->
-      <h3>product 1</h3>
+      <h3>Chicken Steak</h3>
+      <img class="swiper-slide slide" src="/front-end/images/Chicken Steak.jpg" width="100%;" padding="none;">
       <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
    </div>
   
    <div class="product">
     <img src="" alt=""> <!--  -->
-    <h3>product 2</h3>
+    <h3>Chicken Sandwich</h3>
+    <img class="swiper-slide slide" src="/front-end/images/Chicken Sandwich.jpg" width="100%;" padding="none;">
     <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
   </div>
   
   <div class="product">
     <img src="" alt=""> <!--  -->
-    <h3>product 3</h3>
+    <h3>Chicken Ceaser Wrap</h3>
+    <img class="swiper-slide slide" src="/front-end/images/Chicken Ceasar Wrap.jpg" width="100%;" padding="none;">
     <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
   </div>
   
   <div class="product">
     <img src="" alt=""> <!--  -->
-    <h3>product 4</h3>
+    <h3>Grilled Sandwich</h3>
+    <img class="swiper-slide slide" src="/front-end/images/Grilled.jpg" width="100%;" padding="none;">
     <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
   </div>
   
   <div class="product">
     <img src="" alt=""> <!--  -->
-    <h3>product 5</h3>
+    <h3>Chicken Cheese Sandwich</h3>
+    <img class="swiper-slide slide" src="/front-end/images/Ham Sandwich.jpg" width="100%;" padding="none;">
     <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
   </div>
   
