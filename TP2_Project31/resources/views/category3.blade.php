@@ -3,7 +3,7 @@
 
 @section('main-container')
 <section class="heading-link">
-   <h3>Category 3</h3>
+   <h3>Seafood items</h3>
    <p> <a href="{{('homepage') }}">home</a> / category 3 </p> <!-- links the home heading on the contact me page back to the home page -->
 </section>
 
@@ -15,31 +15,36 @@
   
     <div class="product">
       <img src="" alt=""> <!--  -->
-      <h3>product 1</h3>
+      <h3>Fish Pie</h3>
+      <img class="swiper-slide slide" src="/front-end/images/Fish Pie.jpg" width="100%;" padding="none;">
       <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
    </div>
   
    <div class="product">
     <img src="" alt=""> <!--  -->
-    <h3>product 2</h3>
+    <h3>Fish Sandwich</h3>
+    <img class="swiper-slide slide" src="/front-end/images/BLT.jpg" width="100%;" padding="none;">
     <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
   </div>
   
   <div class="product">
     <img src="" alt=""> <!--  -->
-    <h3>product 3</h3>
+    <h3>Tuna Sandwich</h3>
+    <img class="swiper-slide slide" src="/front-end/images/Tuna Sandwich.jpg" width="100%;" padding="none;">
     <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
   </div>
   
   <div class="product">
     <img src="" alt=""> <!--  -->
-    <h3>product 4</h3>
+    <h3>Shrimp Wrap</h3>
+    <img class="swiper-slide slide" src="/front-end/images/Turkey Wrap.jpeg" width="100%;" padding="none;">
     <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
   </div>
   
   <div class="product">
     <img src="" alt=""> <!--  -->
-    <h3>product 5</h3>
+    <h3>Cooked Lobster</h3>
+    <img class="swiper-slide slide" src="/front-end/images/Cooked Sausages.jpg" width="100%;" padding="none;">
     <button type="submit" onclick="myAlert()" class="btn">Add to Basket</button>
   </div>
   

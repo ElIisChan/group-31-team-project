@@ -57,4 +57,9 @@ Route::post('/addbasket/{id}',[App\Http\Controllers\HomeController::class, 'addb
 Route::get('/basket',[App\Http\Controllers\HomeController::class, 'showbasket']);
 Route::get('/delete/{id}',[App\Http\Controllers\HomeController::class, 'deletebasket']);
 
+//Order History
+Route::get('/showorder',[App\Http\Controllers\HomeController::class, 'showorder']);
+
+Route::post('/order',[App\Http\Controllers\HomeController::class, 'confirmorder']);
+
 Route::get('/contactus', [App\Http\Controllers\ContactUsController::class, 'index'])->name('contactus');
