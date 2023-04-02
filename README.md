@@ -13,7 +13,7 @@
 Project Ttile: •	Good Value Dinner (G.V.D)
 Project Summary: The project is about developing an E-Commerce website targeting users between the age of 18 to 60.  The aim is to sell different categories of food products over the internet. Front-end (HTML & CSS) and Back-end (PHP & JAVA) technologies will be used in the process. Users will be able to see more information about the products, add the products to basket, login/register accounts, admin will have access to an admin panel developed as a web java-application, see order history. The website is expected to be easy to navigate through as per considering our target audience. Front-end teams work will be done in the earlier stages of the development and back-end team will be working till the end of the development, as the website will be tested to make sure the functionality is working as expected. An active and secured server will be used to host the website.
 
-Built using Laravel framework, PHP, JS, HTML, CSS and MySQL. Hosted using Aston University servers.
+Built using Laravel framework, PHP FXML, Scene Builder, Java, JS, HTML, CSS and MySQL Database.
 
 Website URL: https://210074349.cs2410-web01pvm.aston.ac.uk/TP2_Project31/TP2_Project31/public/ 
 
