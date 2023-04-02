@@ -1,5 +1,4 @@
 <h1>Team 31 Project Main Repo</h1>
-<p>This is the repository that is controlling the website hosted at XXX, to see the code for the Java application, please head to <a href="https://github.com/ElIisChan/group-31-team-project-java">the java repo</a></p>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
@@ -12,6 +11,8 @@ Built using Laravel framework, PHP FXML, Scene Builder, Java, JS, HTML, CSS and 
 Website URL: https://210074349.cs2410-web01pvm.aston.ac.uk/TP2_Project31/TP2_Project31/public/ 
 
 Link to GitHub: https://github.com/ElIisChan/group-31-team-project/tree/main
+
+<p>This is the repository that is controlling the website hosted at XXX, to see the code for the Java application, please head to <a href="https://github.com/ElIisChan/group-31-team-project-java">the java repo</a></p>
 
 Link to Trello: https://trello.com/invite/b/02Ok0Vba/ATTIc4f29e1432894f9d76a954521700d8d5B79C9B38/tp-team-31
 
